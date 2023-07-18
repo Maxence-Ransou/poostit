@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #020202;
+  font-family: "Montserrat", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #d58f7c;
+}
+span{
+  color: #d58f7c;
+}
+.background{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(image/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 20;
+}
+.navbar {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 100vw;
+  top: 10px;
+  height: 50px;
+}
+.navbar .title {
+  font-size: 22px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar_home{
+  cursor: pointer;
+}
+.login.navbar_home {
+  margin-right: 20px;
+  font-size: 15px;
+}
+.navbar .btn {
+  height: 35px;
+  color: #f9f9f9;
+  background-color: #020202;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  width: 110px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.btn.border-radius {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  cursor: pointer;
+  background-color: #d58f7c;
+  color: #fff;
+}
+
+.btn.border.form {
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: #d58f7c;
+  letter-spacing: 0.5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+/*header*/
+.left.header {
+  width: 45vw;
+  height: 100vh;
+  margin-left: 0px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding-left: 5%;
+}
+.left .slogan {
+  font-size: 40px;
+  width: 80%;
+  margin-block-start: 0em;
+  margin-block-end: 0.8em;
+}
+.header .btn_container {
+  display: flex;
+  width: 80%;
+}
+.header .btn_container .btn {
+  width: 140px;
+  height: 33px;
+  font-size: 15px;
+}
+.header .btn_container .btn:first-child {
+  margin-right: 30px;
+}
+.right.header {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 45vw;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding-left: 5%;
+}
+.right.header .banner {
+  width: 90%;
+  border-radius: 35px;
+  border-bottom-right-radius: 150px;
+}

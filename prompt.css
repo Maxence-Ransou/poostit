@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  width: 100vw;
+  height: calc(100vh - 20px);
+  margin-top: calc(70px - 1rem);
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.prompt_container {
+  width: 700px;
+  height: 100%;
+}
+.info_prompt {
+  display: grid;
+  align-items: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #192552;
+}
+.title_prompt {
+  margin-left: -16.3%;
+}
+.prenom {
+  margin-left: 20px;
+  background: #192552;
+  color: #f2f2f2;
+  font-weight: lighter;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0.25rem 1.15rem 0.3rem 1.15rem;
+  font-size: 13px;
+  display: flex;
+  justify-content: start;
+  cursor: pointer;
+}
+.desc {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+.buy_info {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.buy {
+  margin-left: 20px;
+  background: none;
+  border: 1px solid #192552;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.popup_contaier {
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+}
+.info_user {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid #192552;
+  border-radius: 5px;
+}
+.droit{
+  margin-top: 10px;
+}
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  15% {
+    left: 0%;
+  }
+  17.5% {
+    left: -100%;
+  }
+  32.5% {
+    left: -100%;
+  }
+  35% {
+    left: -200%;
+  }
+  50% {
+    left: -200%;
+  }
+  52.5% {
+    left: -300%;
+  }
+  72.5% {
+    left: -300%;
+  }
+  75% {
+    left: -400%;
+  }
+  95% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+body {
+  margin: 0;
+}
+.slider {
+  overflow: hidden;
+}
+.slider figure img {
+  width: 20%;
+  float: left;
+  border-radius:4px;
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s slidy infinite;
+}

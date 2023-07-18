@@ -1,0 +1,117 @@
+/*form container*/
+.form {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  width: 100%;
+}
+#slogan {
+  font-weight: 500;
+  font-size: calc(1vw + 30px);
+  text-align: center;
+}
+.input_form_container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+label {
+  margin-bottom: 7px;
+  text-align: left;
+  margin-top: 1rem;
+}
+label:first-child {
+  margin-top: 0rem;
+}
+.input {
+  width: 250px;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid #e8e9ec;
+  border-radius: 7px;
+  padding: 0.7rem;
+  outline: none;
+  transition: border 0.3s;
+}
+.input:focus {
+  border: 1px solid #020202;
+}
+.btn {
+  background: none;
+  color: #fafafa;
+  border-radius: 7px;
+  border: none;
+  width: 274px;
+  background-color: #74a2bd;
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.forgot_connexion_container {
+  display: flex;
+  justify-content: center;
+}
+.forgot_connexion_container a {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.forgot_connexion_container a:hover {
+  color: #74a2bd;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+.forgot_connexion_container a:nth-child(2) {
+  margin-left: 1.5rem;
+}
+/*initialiser les erreurs*/
+
+#wrong_password {
+  margin-top: -1rem;
+  margin-bottom: -3rem;
+}
+.false_login {
+  animation: false 0.4s ease-in;
+}
+
+@keyframes false {
+  0% {
+    transform: translateX(5px);
+  }
+  25% {
+    transform: translateX(-5px);
+    border-color: #020202;
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+    border-color: #020202;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 900px) {
+  .container_form {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    margin-top: -25px;
+  }
+  .container_form.inscription {
+    min-height: 650px;
+  }
+}
